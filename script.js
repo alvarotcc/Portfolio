@@ -12,22 +12,22 @@ document.querySelectorAll('nav a').forEach(anchor => {
 // Dados para destaques
 const destaques = [
   {
-    titulo: "Projeto em Destaque 1",
-    descricao: "Descrição breve do projeto ou trabalho importante.",
-    imagem: "assets/backgroundExellence.jpg",
-    link: "https://link-destaque1.com"
+    titulo: "Agregador de links",
+    descricao: "Aloque todos seus links em um so lugar com tema dia e noite.",
+    imagem: "assets/Agregador_links.jpg",
+    link: "https://alvarotcc.github.io/Fast-Work/"
   },
   {
-    titulo: "Projeto em Destaque 2",
-    descricao: "Outra descrição relevante e atrativa.",
-    imagem: "assets/backgroundExellence.jpg",
-    link: "https://link-destaque2.com"
+    titulo: "Excellence page",
+    descricao: "Uma pagina desenvolvida para levar toda gama de serviços da empresa Excellence Restaurações.",
+    imagem: "assets/Excellence.jpg",
+    link: "https://alvarotcc.github.io/Excellence-page/"
   },
   {
-    titulo: "Projeto em Destaque 3",
-    descricao: "Um breve resumo visual e envolvente do projeto.",
-    imagem: "assets/backgroundExellence.jpg",
-    link: "https://link-destaque3.com"
+    titulo: "Mostruario digital",
+    descricao: "Uma opção para quem vende em casa e precisa mostrar seus produtos sem sair de casa.",
+    imagem: "assets/Mostruario.jpg",
+    link: "https://alvarotcc.github.io/photo_showcase/"
   }
 ];
 
