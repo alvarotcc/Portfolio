@@ -88,3 +88,28 @@ const observer = new IntersectionObserver(
 
 // Observar todos os contadores
 counters.forEach(counter => observer.observe(counter));
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth <= 768) {
+    const sponsors = document.querySelector('.sponsors');
+    const projects = [...sponsors.querySelectorAll('.project')];
+
+    projects.forEach(proj => {
+      const clone = proj.cloneNode(true);
+      sponsors.appendChild(clone);
+    });
+  }
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const sponsors = document.querySelector('.sponsors');
+  const btnLeft = document.getElementById('scrollLeft');
+  const btnRight = document.getElementById('scrollRight');
+
+  btnLeft.addEventListener('click', () => {
+    sponsors.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+
+  btnRight.addEventListener('click', () => {
+    sponsors.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+});
