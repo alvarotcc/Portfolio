@@ -52,17 +52,7 @@ header {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  animation: slowZoom 10s ease-in-out infinite alternate;
-  filter: brightness(0.4);
-}
-
-@keyframes slowZoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
+  filter: brightness(0.5);
 }
 
 .header-content {
