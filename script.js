@@ -17,11 +17,17 @@ const destaques = [
     imagem: "assets/Agregador_links.jpg",
     link: "https://alvarotcc.github.io/Fast-Work/"
   },
-  {
+    {
     titulo: "Excellence page",
     descricao: "Uma pagina desenvolvida para levar toda gama de serviços da empresa Excellence Restaurações.",
     imagem: "assets/Excellence.jpg",
     link: "https://alvarotcc.github.io/Excellence-page/"
+  },
+   {
+    titulo: "Site Tecnoar",
+    descricao: "Um site para mostrar tranparencia e qualidade.",
+    imagem: "assets/Tecnoar.jpg",
+    link: "https://alvarotcc.github.io/tecnoar_site/"
   },
   {
     titulo: "Mostruario digital",
