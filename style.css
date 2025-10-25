@@ -272,43 +272,54 @@ section h2 {
 /* Projetos - responsivo com grid e scroll no mobile */
 .sponsors {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem 0;
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
-/* CONTAINER que rola no mobile */
-.sponsors {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;              /* aqui é a chave */
+  flex-wrap: nowrap;               /* força uma linha única para scroll */
+  overflow-x: auto;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 1rem;              /* espaço lateral para evitar corte dos itens */
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;         /* Firefox */
-  flex: 0 0 auto;
-}
-.sponsors::-webkit-scrollbar {
-  display: none;                 /* Chrome, Safari, Edge */
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;        /* IE/Edge */
+  scrollbar-width: none;          /* Firefox */
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* ITEM de projeto */
+/* remove barra visual */
+.sponsors::-webkit-scrollbar { display: none; }
+
+/* espaçadores para garantir que primeiro/último apareçam inteiros */
+.sponsors::before,
+.sponsors::after {
+  content: "";
+  flex: 0 0 1rem;
+}
+
+/* ITEM de projeto - largura fixa conforme solicitado */
 .project {
-  flex: 0 0 auto;
-  width: 120px;
+  flex: 0 0 120px;     /* largura fixa 120px */
+  min-width: 120px;
+  max-width: 120px;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  -webkit-backface-visibility: hidden; /* reduz artefatos em mobile */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .project img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 6px;
+  object-fit: cover;
 }
 
 
