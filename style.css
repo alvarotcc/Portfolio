@@ -24,13 +24,25 @@ nav {
   z-index: 1000;
 }
 
+nav :hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 nav a {
   color: #fff;
   margin: 0 1rem;
   text-decoration: none;
   font-weight: 500;
 }
+#menu-toggle {
+  display: none;
+}
 
+/* Botão hamburguer padrão */
+.menu-toggle {
+  display: none;
+}
 /* Cabeçalho com vídeo de fundo */
 header {
   position: relative;
@@ -222,6 +234,41 @@ section h2 {
   display: none;                /* Chrome, Safari, Edge */
 }
 
+/* Galeria de Serviços */
+.services-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00ffcc;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
 /* Projetos - responsivo com grid e scroll no mobile */
 .sponsors {
   display: flex;
@@ -243,6 +290,7 @@ section h2 {
   padding: 1rem 0;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;         /* Firefox */
+  flex: 0 0 auto;
 }
 .sponsors::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari, Edge */
@@ -375,7 +423,74 @@ main {
 
 /* Opcional: esconde as setas no mobile se quiser */
 @media (max-width: 768px) {
+  /* Esconde as setas de rolagem */
   .scroll-btn {
     display: none;
+  }
+
+  /* Esconde os links do menu no estado padrão */
+  nav a {
+    display: none;
+  }
+
+  /* Checkbox invisível que controla o estado */
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Botão hamburguer */
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.5s ease; /* rotação suave */
+  }
+
+  /* Gira o botão quando o menu é aberto */
+  #menu-toggle:checked + .menu-toggle {
+    transform: rotate(180deg);
+  }
+
+  /* Menu principal escondido por padrão */
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.818);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 4rem; /* espaço para o botão */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    z-index: 1000;
+  }
+
+  /* Quando o checkbox for marcado, o menu aparece */
+  #menu-toggle:checked ~ nav {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Links do menu (quando ativo) */
+  nav a {
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+  nav a:hover {
+    transform: scale(1.2);
   }
 }
