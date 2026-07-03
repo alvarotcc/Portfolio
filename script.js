@@ -11,11 +11,23 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
 // Dados para destaques
 const destaques = [
+ {
+    titulo: "Gerenciador Uber",
+    descricao: "Sistema de gerenciamento e controle financeiro para motoristas de app.",
+    imagem: "assets/gerenciador-uber.jpeg",
+    link: "https://alvarotcc.github.io/Portfolio/"
+  },
   {
     titulo: "Agregador de links",
-    descricao: "Aloque todos seus links em um so lugar com tema dia e noite.",
+    descricao: "Aloque todos seus links em um so lugar com tema dia e noite e foto atrativa do cliente.",
     imagem: "assets/Agregador_links.jpg",
     link: "https://alvarotcc.github.io/Fast-Work/"
+  },
+  {
+    titulo: "Agentes de IA",
+    descricao: "agentes de Inteligencia Artificial delegando e seguinto tarefas simultaneas com possibilidades infinitas.",
+    imagem: "assets/agent-ia.jpg",
+    link: "https://alvarotcc.github.io/Portfolio/"
   },
     {
     titulo: "Excellence page",
@@ -25,7 +37,7 @@ const destaques = [
   },
    {
     titulo: "Site Tecnoar",
-    descricao: "Um site para mostrar tranparencia e qualidade.",
+    descricao: "Um site para mostrar tranparencia e qualidade, buscando uma ligação com o segmento.",
     imagem: "assets/Tecnoar.jpg",
     link: "https://alvarotcc.github.io/tecnoar_site/"
   },

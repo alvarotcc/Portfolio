@@ -210,8 +210,8 @@ section h2 {
   left: 0;
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-  color: #fff;
+  background: rgba(4, 0, 0, 0.776);
+  color: #ffffff;
 }
 
 .destaque-texto h3 {
