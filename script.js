@@ -14,14 +14,14 @@ const destaques = [
  {
     titulo: "Gerenciador Uber",
     descricao: "Sistema de gerenciamento e controle financeiro para motoristas de app.",
-    imagem: "assets/gerenciador-uber.jpeg",
+    video: "assets/gerenciador-uber.webm",
     link: "https://alvarotcc.github.io/Portfolio/"
   },
   {
     titulo: "Portifólios",
-    descricao: "Aloque todos seus links em um so lugar com tema dia e noite e foto atrativa do cliente.",
+    descricao: "Criação de portifólios únicos cheios de animações e aparências que remetem sua profissão.",
     video: "assets/portifolio.webm",
-    link: "https://alvarotcc.github.io/Fast-Work/"
+    link: "https://alvarotcc.github.io/Portfolio/"
   },
   {
     titulo: "Agregador de links",
