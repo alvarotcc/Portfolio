@@ -18,6 +18,12 @@ const destaques = [
     link: "https://alvarotcc.github.io/Portfolio/"
   },
   {
+    titulo: "Portifólios",
+    descricao: "Aloque todos seus links em um so lugar com tema dia e noite e foto atrativa do cliente.",
+    video: "assets/portifolio.webm",
+    link: "https://alvarotcc.github.io/Fast-Work/"
+  },
+  {
     titulo: "Agregador de links",
     descricao: "Aloque todos seus links em um so lugar com tema dia e noite e foto atrativa do cliente.",
     imagem: "assets/Agregador_links.jpg",
@@ -57,13 +63,21 @@ destaques.forEach(dest => {
   card.target = "_blank";
   card.className = "destaque-card";
 
-  card.innerHTML = `
-    <img src="${dest.imagem}" alt="${dest.titulo}">
-    <div class="destaque-texto">
-      <h3>${dest.titulo}</h3>
-      <p>${dest.descricao}</p>
-    </div>
-  `;
+const media = dest.video
+  ? `
+    <video autoplay loop muted playsinline>
+      <source src="${dest.video}" type="video/webm">
+    </video>
+  `
+  : `<img src="${dest.imagem}" alt="${dest.titulo}">`;
+
+card.innerHTML = `
+  ${media}
+  <div class="destaque-texto">
+    <h3>${dest.titulo}</h3>
+    <p>${dest.descricao}</p>
+  </div>
+`;
 
   container.appendChild(card);
 });
