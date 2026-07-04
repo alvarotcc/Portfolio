@@ -12,47 +12,53 @@ document.querySelectorAll('nav a').forEach(anchor => {
 // Dados para destaques
 const destaques = [
  {
-    titulo: "Gerenciador Uber",
-    descricao: "Sistema de gerenciamento e controle financeiro para motoristas de app.",
-    video: "assets/gerenciador-uber.webm",
-    link: "https://alvarotcc.github.io/Portfolio/"
-  },
-  {
-    titulo: "Portifólios",
-    descricao: "Criação de portifólios únicos cheios de animações e aparências que remetem sua profissão.",
-    video: "assets/portifolio.webm",
-    link: "https://alvarotcc.github.io/Portfolio/"
-  },
-  {
-    titulo: "Agregador de links",
-    descricao: "Aloque todos seus links em um so lugar com tema dia e noite e foto atrativa do cliente.",
-    imagem: "assets/Agregador_links.jpg",
-    link: "https://alvarotcc.github.io/Fast-Work/"
-  },
-  {
-    titulo: "Agentes de IA",
-    descricao: "agentes de Inteligencia Artificial delegando e seguinto tarefas simultaneas com possibilidades infinitas.",
-    imagem: "assets/agent-ia.jpg",
-    link: "https://alvarotcc.github.io/Portfolio/"
-  },
-    {
-    titulo: "Excellence page",
-    descricao: "Uma pagina desenvolvida para levar toda gama de serviços da empresa Excellence Restaurações.",
-    imagem: "assets/Excellence.jpg",
-    link: "https://alvarotcc.github.io/Excellence-page/"
-  },
-   {
-    titulo: "Site Tecnoar",
-    descricao: "Um site para mostrar tranparencia e qualidade, buscando uma ligação com o segmento.",
-    imagem: "assets/Tecnoar.jpg",
-    link: "https://alvarotcc.github.io/tecnoar_site/"
-  },
-  {
-    titulo: "Mostruario digital",
-    descricao: "Uma opção para quem vende em casa e precisa mostrar seus produtos sem sair de casa.",
-    imagem: "assets/Mostruario.jpg",
-    link: "https://alvarotcc.github.io/photo_showcase/"
-  }
+  titulo: "Gerenciador Uber",
+  descricao: "Sistema completo para controlar ganhos, despesas e resultados financeiros de motoristas de aplicativos.",
+  video: "assets/gerenciador-uber.webm",
+  link: "https://alvarotcc.github.io/Portfolio/"
+},
+{
+  titulo: "Portifólios",
+  descricao: "Portfólios modernos com animações, identidade visual exclusiva e design alinhado à sua profissão.",
+  video: "assets/portifolio.webm",
+  link: "https://alvarotcc.github.io/Portfolio/"
+},
+{
+  titulo: "Agregador de links",
+  descricao: "Centralize todos os seus links em uma única página com tema claro, escuro e visual personalizado para sua marca.",
+  imagem: "assets/Agregador_links.jpg",
+  link: "https://alvarotcc.github.io/Fast-Work/"
+},
+{
+  titulo: "Agentes de IA",
+  descricao: "Automatize tarefas com agentes de IA inteligentes, aumentando produtividade e eficiência em processos.",
+  imagem: "assets/agent-ia.jpg",
+  link: "https://alvarotcc.github.io/Portfolio/"
+},
+{
+  titulo: "Logomarcas",
+  descricao: "Design de logomarcas  e slogans memoráveis que fortalecem a identidade visual e a presença da sua empresa.",
+  imagem: "assets/logomarcas.jpg",
+  link: "https://alvarotcc.github.io/Portfolio/"
+},
+{
+  titulo: "Excellence page",
+  descricao: "Landing page criada para destacar os serviços da empresa com design moderno e comunicação eficiente.",
+  imagem: "assets/Excellence.jpg",
+  link: "https://alvarotcc.github.io/Excellence-page/"
+},
+{
+  titulo: "Site Tecnoar",
+  descricao: "Website institucional desenvolvido para transmitir confiança, qualidade e fortalecer a presença digital.",
+  imagem: "assets/Tecnoar.jpg",
+  link: "https://alvarotcc.github.io/tecnoar_site/"
+},
+{
+  titulo: "Mostruário digital",
+  descricao: "Catálogo digital para apresentar produtos de forma prática, elegante e acessível em qualquer dispositivo.",
+  imagem: "assets/Mostruario.jpg",
+  link: "https://alvarotcc.github.io/photo_showcase/"
+}
 ];
 
 // Inserir destaques dinamicamente
