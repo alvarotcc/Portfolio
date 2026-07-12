@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Work - Playground AI</title>
+  <link rel="icon" href="assets/logo2.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="playground.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="back-home">← Voltar ao Portfólio</a>
+      <div class="logo-area">
+        <img src="assets/logo.png" alt="Fast Work Logo" class="logo">
+        <h1>AI Playground</h1>
+      </div>
+      <div style="width: 150px;"></div> <!-- Spacer for symmetry -->
+    </div>
+  </header>
+
+  <main>
+    <div class="chat-container">
+      <div class="chat-window" id="chat-window">
+        <!-- Messages will be inserted here -->
+        <div class="message bot-message">
+          Olá! Eu sou o assistente virtual da Fast Work. 🚀<br>
+
+          Estou aqui para te mostrar como nossas soluções de IA e Automação podem transformar seu negócio.
+        </div>
+      </div>
+
+      <div class="suggested-queries" id="suggested-queries">
+        <button class="query-btn faq-btn" id="faq-toggle">Perguntas frequentes</button>
+        <div class="faq-list" id="faq-list">
+          <button class="query-btn" data-suggest="O que vocês fazem?">O que vocês fazem?</button>
+          <button class="query-btn" data-suggest="Sobre IA e Agentes">Sobre IA e Agentes</button>
+          <button class="query-btn" data-suggest="Automações (WhatsApp/CRM)">Automações (WhatsApp/CRM)</button>
+          <button class="query-btn" data-suggest="Orçamentos e valores">Orçamentos e valores</button>
+          <button class="query-btn" data-suggest="Como funciona um projeto?">Como funciona um projeto?</button>
+          <button class="query-btn" data-suggest="Vocês fazem landing page?">Vocês fazem landing page?</button>
+          <button class="query-btn" data-suggest="Como melhorar atendimento?">Como melhorar atendimento?</button>
+          <button class="query-btn" data-suggest="Quais integrações vocês fazem?">Quais integrações vocês fazem?</button>
+        </div>
+      </div>
+
+
+
+
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="Digite sua pergunta aqui..." autocomplete="off">
+        <button id="send-btn">Enviar</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="playground.js"></script>
+
+</body>
+</html>
+
