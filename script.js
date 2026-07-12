@@ -26,7 +26,7 @@ const destaques = [
 {
   titulo: "Agregador de links",
   descricao: "Centralize todos os seus links em uma única página com tema claro, escuro e visual personalizado para sua marca.",
-  imagem: "assets/Agregador_links.jpg",
+  video: "assets/fast-links.webm",
   link: "https://alvarotcc.github.io/Fast-Work/"
 },
 {
